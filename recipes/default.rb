@@ -16,7 +16,6 @@ group node['pureftpd']['ftp_group']
 user  node['pureftpd']['ftp_user'] do
   gid   node['pureftpd']['ftp_group']
   shell "/sbin/nologin"
-  home  "/dev/null"
 end
 
 template "/etc/pure-ftpd/pure-ftpd.conf" do
